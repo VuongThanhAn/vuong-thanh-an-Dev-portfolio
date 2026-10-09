@@ -1,786 +1,269 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Vương Thành Ân — Technical Artist Portfolio."
-    />
-    <title>Vương Thành Ân — Technical Artist</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vương Thành Ân — Unity Game Developer portfolio. Gameplay programming, systems, tools, and optimization." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Vương Thành Ân — Unity Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Vương Thành Ân, home">VUONG THANH AN</a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#projects">PROJECTS</a>
+        <a href="#highlights">TECHNICAL HIGHLIGHTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <span class="header-role">UNITY GAME DEVELOPER</span>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
 
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a href="#" class="logo">VUONG THANH AN</a>
-
-        <nav class="navigation">
-          <button class="nav-button active" data-tab="artwork">ARTWORKS</button>
-          <button class="nav-button" data-tab="games">GAMES</button>
-        </nav>
-
-        <div class="header-role">TECHNICAL ARTIST</div>
+  <main id="top">
+    <section class="hero section-shell">
+      <p class="eyebrow">UNITY / C# DEVELOPER</p>
+      <h1>I build games,<br /><span>systems, and tools.</span></h1>
+      <p class="hero-copy">Game developer focused on gameplay programming, reusable systems, technical problem-solving, and mobile optimization.</p>
+      <div class="hero-actions">
+        <a class="button button-light" href="#projects">EXPLORE PROJECTS <span aria-hidden="true">↘</span></a>
+        <a class="button button-quiet" href="https://vuongthanhan.github.io/vuong-thanh-an-cv/" target="_blank" rel="noopener noreferrer">VIEW RESUME ↗</a>
       </div>
-    </header>
+      <div class="hero-meta"><span>UNITY · C# · OOP</span><span>GAMEPLAY / SYSTEMS / OPTIMIZATION</span></div>
+    </section>
 
-    <main>
-      <!-- ================= ARTWORK ================= -->
+    <section id="projects" class="section-shell projects-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK</p><h2>Featured projects<span class="heading-period">.</span></h2></div>
+        <p class="section-intro">A selection of games and production work, with an emphasis on my role and technical contributions.</p>
+      </div>
 
-      <section id="artwork" class="tab-section active">
-        <div class="section-header">
-          <div>
-            <h1>ARTWORKS</h1>
-            <p>
-              Technical art, rendering, shaders, tools and visual experiments.
-            </p>
+      <div class="project-grid">
+        <article class="project-card project-card-featured" data-gallery>
+          <a class="card-media-link" href="projects/racing-master.html" aria-label="View Racing Master project details">
+            <div class="card-media"><img class="gallery-main" src="games/images/Racingmaster.png" alt="Racing Master gameplay" loading="lazy" /></div>
+          </a>
+          <div class="card-thumbnails" aria-label="Racing Master media gallery">
+            <button class="mini-thumb is-active" type="button" data-src="games/images/Racingmaster.png" data-type="image" aria-label="Show Racing Master screenshot 1"><img src="games/images/Racingmaster.png" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Racingmaster-1.png" data-type="image" aria-label="Show Racing Master screenshot 2"><img src="games/images/Racingmaster-1.png" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/Racing Master.mp4" data-type="video" aria-label="Play Racing Master gameplay video"><span class="video-thumb">▶ VIDEO</span></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/Racing Master Sticker.mp4" data-type="video" aria-label="Play Racing Master sticker feature video"><span class="video-thumb">▶ FEATURE</span></button>
           </div>
-        </div>
+          <div class="card-copy"><div class="card-title-row"><div><p class="project-kicker">01 / MOBILE RACING</p><h3>Racing Master</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-summary">Gameplay systems, vehicle customization, Addressables, and performance optimization.</p><div class="tag-list"><span>Unity</span><span>C#</span><span>Mobile</span></div></div>
+        </article>
 
-        <div class="artwork-list">
-          <article class="artwork-project project-item">
-            <div class="artwork-title">
-              <h2>PIXELATION RENDERER</h2>
-              <p class="tags">Unity · URP · Rendering</p>
-            </div>
-
-            <div class="artwork-media">
-              <video autoplay muted loop playsinline>
-                <source
-                  src="artwork/videos/Pixelate Render.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-
-            <p class="artwork-description">
-              Personal study project hobby, a real-time pixelation and palette
-              quantization renderer developed for Unity render pipeline feature,
-              which learn from Red Giraffe on youtube.
-            </p>
-          </article>
-
-          <article class="artwork-project project-item">
-            <div class="artwork-title">
-              <h2>Vehicle Sparkle Paint</h2>
-              <p class="tags">Shader Graph</p>
-            </div>
-
-            <div class="artwork-media">
-              <video autoplay muted loop playsinline>
-                <source
-                  src="artwork/videos/Racing Master Paint Shader.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-
-            <p class="artwork-description">
-              A sparkling paint for car racing game.
-            </p>
-          </article>
-
-          <article class="artwork-project project-item">
-            <div class="artwork-title">
-              <h2>LIGHTNING BEAM</h2>
-              <p class="tags">Shader Graph</p>
-            </div>
-
-            <div class="artwork-media">
-              <video autoplay muted loop playsinline>
-                <source
-                  src="artwork/videos/Lightning Beam.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-
-            <p class="artwork-description">
-              A freelancing match 3 game project, lightning beam VFX for line
-              renderer.
-            </p>
-          </article>
-
-          <article class="artwork-project project-item">
-            <div class="artwork-title">
-              <h2>3-Match Rainbow</h2>
-              <p class="tags">Shader Graph</p>
-            </div>
-
-            <div class="artwork-media">
-              <video autoplay muted loop playsinline>
-                <source
-                  src="artwork/videos/3-Match Rainbow.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-
-            <p class="artwork-description">
-              A freelancing match 3 game project, rainbow tile VFX.
-            </p>
-          </article>
-
-          <article class="artwork-project project-item">
-            <div class="artwork-title">
-              <h2>GAS FILL</h2>
-              <p class="tags">Shader Graph</p>
-            </div>
-
-            <div class="artwork-media">
-              <video autoplay muted loop playsinline>
-                <source src="artwork/videos/Fill Shader.mp4" type="video/mp4" />
-              </video>
-            </div>
-
-            <p class="artwork-description">A stylize water fill shader VFX</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- ================= GAMES ================= -->
-
-      <section id="games" class="tab-section">
-        <div class="section-header">
-          <div>
-            <h1>GAMES</h1>
-            <p>Games and production projects I've worked on.</p>
+        <article class="project-card" data-gallery>
+          <div class="card-media-link" aria-label="Miner City gameplay media">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/MinerCity.jpg" alt="Miner City isometric city-building gameplay" loading="lazy" /></div>
           </div>
-        </div>
-
-        <div class="games-list">
-          <!-- ================= GAME 01 ================= -->
-
-          <article class="game-card project-item" data-game>
-            <!-- LEFT: MEDIA -->
-            <div class="game-gallery">
-              <div class="game-main-image">
-                <img
-                  class="main-image"
-                  src="games/images/Aviatrix.png"
-                  alt="Aviatrix"
-                />
-
-                <video
-                  class="main-video"
-                  controls
-                  playsinline
-                  preload="metadata"
-                ></video>
-
-                <button class="gallery-arrow gallery-prev">‹</button>
-                <button class="gallery-arrow gallery-next">›</button>
-              </div>
-
-              <!-- Small thumbnails belong ONLY to the left media column -->
-              <div class="game-thumbnail-row">
-                <button
-                  class="thumbnail-nav thumbnail-prev"
-                  type="button"
-                  aria-label="Scroll thumbnails left"
-                >
-                  ‹
-                </button>
-
-                <div class="game-thumbnails">
-                  <button
-                    class="thumbnail active"
-                    type="button"
-                    data-image="image"
-                  >
-                    <img
-                      src="games/images/Aviatrix.png"
-                      alt="Aviatrix screenshot 1"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="video">
-                    <video
-                      src="games/videos/Aviatrix.mp4"
-                      muted
-                      loop
-                      playsinline
-                      preload="metadata"
-                    ></video>
-
-                    <span class="video-icon">▶</span>
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Aviatrix-1.png"
-                      alt="Aviatrix screenshot 2"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Aviatrix-2.png"
-                      alt="Aviatrix screenshot 3"
-                    />
-                  </button>
-                </div>
-
-                <button
-                  class="thumbnail-nav thumbnail-next"
-                  type="button"
-                  aria-label="Scroll thumbnails right"
-                >
-                  ›
-                </button>
-              </div>
-            </div>
-
-            <!-- RIGHT: GAME INFO -->
-            <div class="game-content">
-              <h2>AVIATRIX</h2>
-
-              <p class="game-tags">Unity · Multi-platform · Shooter</p>
-
-              <div class="game-description">
-                <h3>DESCRIPTION</h3>
-
-                <p>
-                  Responsible for optimizing gameplay environments and the
-                  rendering pipeline for mobile porting, including Occlusion
-                  Culling, gameplay controls, skill systems, and boss
-                  development.
-                </p>
-              </div>
-
-              <div class="game-role">
-                <h3>MY ROLE</h3>
-                <p>Unity Developer</p>
-              </div>
-
-              <div class="game-link">
-                <h3>GAME</h3>
-
-                <a
-                  href="https://store.epicgames.com/p/avi-35e86e"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  PLAY GAME ↗
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- ================= GAME 02 ================= -->
-
-          <article class="game-card project-item" data-game>
-            <!-- LEFT: MEDIA -->
-            <div class="game-gallery">
-              <div class="game-main-image">
-                <img
-                  class="main-image"
-                  src="games/images/Racingmaster.png"
-                  alt="Racing master"
-                />
-
-                <video
-                  class="main-video"
-                  controls
-                  playsinline
-                  preload="metadata"
-                ></video>
-
-                <button class="gallery-arrow gallery-prev">‹</button>
-                <button class="gallery-arrow gallery-next">›</button>
-              </div>
-
-              <!-- Small thumbnails belong ONLY to the left media column -->
-              <div class="game-thumbnail-row">
-                <button
-                  class="thumbnail-nav thumbnail-prev"
-                  type="button"
-                  aria-label="Scroll thumbnails left"
-                >
-                  ‹
-                </button>
-
-                <div class="game-thumbnails">
-                  <button
-                    class="thumbnail active"
-                    type="button"
-                    data-image="image"
-                  >
-                    <img
-                      src="games/images/Racingmaster.png"
-                      alt="Racing master screenshot 1"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Racingmaster-1.png"
-                      alt="Racing master screenshot 1"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="video">
-                    <video
-                      src="games/videos/Racing Master.mp4"
-                      muted
-                      loop
-                      playsinline
-                      preload="metadata"
-                    ></video>
-
-                    <span class="video-icon">▶</span>
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="video">
-                    <video
-                      src="games/videos/Racing Master Sticker.mp4"
-                      muted
-                      loop
-                      playsinline
-                      preload="metadata"
-                    ></video>
-
-                    <span class="video-icon">▶</span>
-                  </button>
-                </div>
-
-                <button
-                  class="thumbnail-nav thumbnail-next"
-                  type="button"
-                  aria-label="Scroll thumbnails right"
-                >
-                  ›
-                </button>
-              </div>
-            </div>
-
-            <!-- RIGHT: GAME INFO -->
-            <div class="game-content">
-              <h2>Racing Master</h2>
-
-              <p class="game-tags">Unity · Mobile · Racing</p>
-
-              <div class="game-description">
-                <h3>DESCRIPTION</h3>
-
-                <p>
-                  Responsible for gameplay programming, vehicle customization,
-                  UI, environment optimization, rendering optimization, terrain
-                  optimization, Occlusion Culling, Addressables, and mobile
-                  performance optimization.
-                </p>
-              </div>
-
-              <div class="game-role">
-                <h3>MY ROLE</h3>
-                <p>Unity Developer</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- ================= GAME 03 ================= -->
-
-          <article class="game-card project-item" data-game>
-            <!-- LEFT: MEDIA -->
-            <div class="game-gallery">
-              <div class="game-main-image">
-                <img
-                  class="main-image"
-                  src="games/images/Halfwish.png"
-                  alt="Halfwish"
-                />
-
-                <video
-                  class="main-video"
-                  controls
-                  playsinline
-                  preload="metadata"
-                ></video>
-
-                <button class="gallery-arrow gallery-prev">‹</button>
-                <button class="gallery-arrow gallery-next">›</button>
-              </div>
-
-              <!-- Small thumbnails belong ONLY to the left media column -->
-              <div class="game-thumbnail-row">
-                <button
-                  class="thumbnail-nav thumbnail-prev"
-                  type="button"
-                  aria-label="Scroll thumbnails left"
-                >
-                  ‹
-                </button>
-
-                <div class="game-thumbnails">
-                  <button
-                    class="thumbnail active"
-                    type="button"
-                    data-image="image"
-                  >
-                    <img
-                      src="games/images/Halfwish.png"
-                      alt="Halfwish screenshot 1"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="video">
-                    <video
-                      src="games/videos/Halfwish.mp4"
-                      muted
-                      loop
-                      playsinline
-                      preload="metadata"
-                    ></video>
-
-                    <span class="video-icon">▶</span>
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Halfwish-1.png"
-                      alt="Halfwish screenshot 2"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Halfwish-2.png"
-                      alt="Halfwish screenshot 3"
-                    />
-                  </button>
-                </div>
-
-                <button
-                  class="thumbnail-nav thumbnail-next"
-                  type="button"
-                  aria-label="Scroll thumbnails right"
-                >
-                  ›
-                </button>
-              </div>
-            </div>
-
-            <!-- RIGHT: GAME INFO -->
-            <div class="game-content">
-              <h2>HALFWISH</h2>
-
-              <p class="game-tags">Unity · PC-Steam · Card</p>
-
-              <div class="game-description">
-                <h3>DESCRIPTION</h3>
-
-                <p>
-                  Responsible for implementing game UI and UI FX, including
-                  character selection, card drag-and-drop interactions, and card
-                  flip animations. Integrated a third-party 3D dice rolling FX
-                  package and implemented server-driven dice results to ensure
-                  the visual outcome matches the server result.
-                </p>
-              </div>
-
-              <div class="game-role">
-                <h3>MY ROLE</h3>
-                <p>Unity Developer</p>
-              </div>
-
-              <div class="game-link">
-                <h3>GAME</h3>
-
-                <a
-                  href="https://playhalfwish.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  PLAY GAME ↗
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- ================= GAME 04 ================= -->
-
-          <article class="game-card project-item" data-game>
-            <!-- LEFT: MEDIA -->
-            <div class="game-gallery">
-              <div class="game-main-image">
-                <img
-                  class="main-image"
-                  src="games/images/Werewolf-Voice.png"
-                  alt="Werewolf Voice"
-                />
-
-                <video
-                  class="main-video"
-                  controls
-                  playsinline
-                  preload="metadata"
-                ></video>
-
-                <button class="gallery-arrow gallery-prev">‹</button>
-                <button class="gallery-arrow gallery-next">›</button>
-              </div>
-
-              <!-- Small thumbnails belong ONLY to the left media column -->
-              <div class="game-thumbnail-row">
-                <button
-                  class="thumbnail-nav thumbnail-prev"
-                  type="button"
-                  aria-label="Scroll thumbnails left"
-                >
-                  ‹
-                </button>
-
-                <div class="game-thumbnails">
-                  <button
-                    class="thumbnail active"
-                    type="button"
-                    data-image="image"
-                  >
-                    <img
-                      src="games/images/Werewolf-Voice.png"
-                      alt="Werewolf voice screenshot 1"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Werewolf-Voice-2.png"
-                      alt="Werewolf voice screenshot 2"
-                    />
-                  </button>
-
-                  <button class="thumbnail" type="button" data-image="image">
-                    <img
-                      src="games/images/Werewolf-Voice-3.png"
-                      alt="Werewolf voice screenshot 3"
-                    />
-                  </button>
-                </div>
-
-                <button
-                  class="thumbnail-nav thumbnail-next"
-                  type="button"
-                  aria-label="Scroll thumbnails right"
-                >
-                  ›
-                </button>
-              </div>
-            </div>
-
-            <!-- RIGHT: GAME INFO -->
-            <div class="game-content">
-              <h2>WEREWOLF VOICE</h2>
-
-              <p class="game-tags">Unity · Mobile · Casual</p>
-
-              <div class="game-description">
-                <h3>DESCRIPTION</h3>
-
-                <p>
-                  Responsible for game UI implementation, real-time chat
-                  messaging using WebSocket, and interactive tutorial systems.
-                </p>
-              </div>
-
-              <div class="game-role">
-                <h3>MY ROLE</h3>
-                <p>Unity Developer</p>
-              </div>
-
-              <div class="game-link">
-                <h3>GAME</h3>
-
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.hlo.wewolfth&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  PLAY GAME ↗
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- ================= HONORABLE PROJECTS ================= -->
-
-      <section class="honorable-section">
-        <div class="honorable-header">
-          <div>
-            <h2>HONORABLE PROJECTS</h2>
-            <p>Additional projects and contributions worth mentioning.</p>
+          <div class="card-thumbnails" aria-label="Miner City media gallery">
+            <button class="mini-thumb" type="button" data-src="artwork/images/MinerCity-Logo.jpg" data-type="image" aria-label="Show Miner City game logo"><img src="artwork/images/MinerCity-Logo.jpg" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/MinerCity.mp4" data-type="video" aria-label="Play Miner City gameplay video"><span class="video-thumb">▶ GAMEPLAY</span></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/MinerCity-Recording.mp4" data-type="video" aria-label="Play Miner City screen recording"><span class="video-thumb">▶ RECORDING</span></button>
+            <button class="mini-thumb is-active" type="button" data-src="artwork/images/MinerCity.jpg" data-type="image" aria-label="Show Miner City gameplay screenshot"><img src="artwork/images/MinerCity.jpg" alt="" loading="lazy"></button>
           </div>
-        </div>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">13 / CITY BUILDER</p><h3>Miner City</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">A city-building game developed with Cocos Creator, featuring an isometric city environment.</p>
+            <div class="tag-list"><span>Cocos Creator</span><span>TypeScript / JavaScript</span><span>Game Development</span></div>
+          </div>
+        </article>
 
-        <div class="honorable-grid">
-          <article class="honorable-card project-item">
-            <a
-              class="honorable-media"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="artwork/images/interior_1.jpg" alt="Project 01" />
-              <!-- <span class="honorable-overlay">VIEW PROJECT ↗</span> -->
-            </a>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="projects/aviatrix.html" aria-label="View Aviatrix project details"><div class="card-media"><img class="gallery-main" src="games/images/Aviatrix.png" alt="Aviatrix game" loading="lazy" /></div></a>
+          <div class="card-thumbnails" aria-label="Aviatrix media gallery">
+            <button class="mini-thumb is-active" type="button" data-src="games/images/Aviatrix.png" data-type="image" aria-label="Show Aviatrix screenshot"><img src="games/images/Aviatrix.png" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/Aviatrix.mp4" data-type="video" aria-label="Play Aviatrix video"><span class="video-thumb">▶ VIDEO</span></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Aviatrix-1.png" data-type="image" aria-label="Show Aviatrix screenshot 2"><img src="games/images/Aviatrix-1.png" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Aviatrix-2.png" data-type="image" aria-label="Show Aviatrix screenshot 3"><img src="games/images/Aviatrix-2.png" alt="" loading="lazy"></button>
+          </div>
+          <div class="card-copy"><div class="card-title-row"><div><p class="project-kicker">02 / ACTION</p><h3>Aviatrix</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-summary">Gameplay controls, skill systems, boss development, and rendering optimization.</p><div class="tag-list"><span>Unity</span><span>Gameplay</span><span>Optimization</span></div><a class="external-link" href="https://store.epicgames.com/p/avi-35e86e" target="_blank" rel="noopener noreferrer">GAME PAGE ↗</a></div>
+        </article>
 
-            <div class="honorable-info">
-              <div>
-                <h3>ARCHVIZ INTERIOR</h3>
-                <p class="honorable-tags">Unreal - Archviz</p>
-              </div>
-              <p class="honorable-role">Dev, Blueprint, Lighting</p>
-            </div>
-          </article>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="projects/halfwish.html" aria-label="View Halfwish project details"><div class="card-media"><img class="gallery-main" src="games/images/Halfwish.png" alt="Halfwish game" loading="lazy" /></div></a>
+          <div class="card-thumbnails" aria-label="Halfwish media gallery">
+            <button class="mini-thumb is-active" type="button" data-src="games/images/Halfwish.png" data-type="image" aria-label="Show Halfwish screenshot"><img src="games/images/Halfwish.png" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/Halfwish.mp4" data-type="video" aria-label="Play Halfwish video"><span class="video-thumb">▶ VIDEO</span></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Halfwish-1.png" data-type="image" aria-label="Show Halfwish screenshot 2"><img src="games/images/Halfwish-1.png" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Halfwish-2.png" data-type="image" aria-label="Show Halfwish screenshot 3"><img src="games/images/Halfwish-2.png" alt="" loading="lazy"></button>
+          </div>
+          <div class="card-copy"><div class="card-title-row"><div><p class="project-kicker">03 / CARD GAME</p><h3>Halfwish</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-summary">Responsive UI interactions, card animations, and server-driven dice results.</p><div class="tag-list"><span>Unity</span><span>UI Systems</span><span>Networking</span></div><a class="external-link" href="https://playhalfwish.com/" target="_blank" rel="noopener noreferrer">GAME PAGE ↗</a></div>
+        </article>
 
-          <article class="honorable-card project-item">
-            <a
-              class="honorable-media"
-              href="https://play.google.com/store/apps/details?id=com.htw.hero.tower.war"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="artwork/images/HeroChallange.png" alt="Project 02" />
-              <span class="honorable-overlay"> VIEW PROJECT ↗ </span>
-            </a>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="projects/werewolf-voice.html" aria-label="View Werewolf Voice project details"><div class="card-media"><img class="gallery-main" src="games/images/Werewolf-Voice.jpg" alt="Werewolf Voice game" loading="lazy" /></div></a>
+          <div class="card-thumbnails" aria-label="Werewolf Voice media gallery">
+            <button class="mini-thumb is-active" type="button" data-src="games/images/Werewolf-Voice.jpg" data-type="image" aria-label="Show Werewolf Voice screenshot"><img src="games/images/Werewolf-Voice.jpg" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/videos/Werewolf Voice - Ultimate Werewolf Party on Steam.mp4" data-type="video" aria-label="Play Werewolf Voice video"><span class="video-thumb">▶ VIDEO</span></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Werewolf-Voice_2.jpg" data-type="image" aria-label="Show Werewolf Voice screenshot 2"><img src="games/images/Werewolf-Voice_2.jpg" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Werewolf-Voice_3.jpg" data-type="image" aria-label="Show Werewolf Voice screenshot 3"><img src="games/images/Werewolf-Voice_3.jpg" alt="" loading="lazy"></button>
+            <button class="mini-thumb" type="button" data-src="games/images/Werewolf-Voice_4.jpg" data-type="image" aria-label="Show Werewolf Voice screenshot 4"><img src="games/images/Werewolf-Voice_4.jpg" alt="" loading="lazy"></button>
+          </div>
+          <div class="card-copy"><div class="card-title-row"><div><p class="project-kicker">04 / SOCIAL MULTIPLAYER</p><h3>Werewolf Voice</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-summary">Real-time messaging with WebSocket, UI implementation, and interactive tutorials.</p><div class="tag-list"><span>Unity</span><span>WebSocket</span><span>Mobile</span></div><a class="external-link" href="https://play.google.com/store/apps/details?id=com.hlo.wewolfth&hl=en" target="_blank" rel="noopener noreferrer">STORE PAGE ↗</a></div>
+        </article>
 
-            <div class="honorable-info">
-              <div>
-                <h3>HERO CHALLENGE: TOWER CONQUEST</h3>
-                <p class="honorable-tags">Unity · Casual</p>
-              </div>
-              <p class="honorable-role">Gameplay · Tools</p>
-            </div>
-          </article>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=com.htw.hero.tower.war" target="_blank" rel="noopener noreferrer" aria-label="Open Hero Challenge: Tower Conquest on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/HeroChallange.webp" alt="Hero Challenge: Tower Conquest" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">05 / CASUAL MOBILE</p><h3>Hero Challenge: Tower Conquest</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Gameplay development and tools for a casual mobile game.</p>
+            <div class="tag-list"><span>Unity</span><span>Gameplay</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=com.htw.hero.tower.war" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-          <article class="honorable-card project-item">
-            <a
-              class="honorable-media"
-              href="https://play.google.com/store/apps/details?id=com.ngn.nut.guardian"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="artwork/images/Nutguardian.png" alt="Project 03" />
-              <span class="honorable-overlay">VIEW PROJECT ↗</span>
-            </a>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=com.ngn.nut.guardian" target="_blank" rel="noopener noreferrer" aria-label="Open Nut Guardian on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/Nutguardian.webp" alt="Nut Guardian" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">06 / CASUAL MOBILE</p><h3>Nut Guardian</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Game development for a casual mobile title.</p>
+            <div class="tag-list"><span>Unity</span><span>Gameplay</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=com.ngn.nut.guardian" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-            <div class="honorable-info">
-              <div>
-                <h3>NUT GUARDIAN</h3>
-                <p class="honorable-tags">Unity · Casual - Mobile</p>
-              </div>
-              <p class="honorable-role">Dev</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=game.spc.space.chasing" target="_blank" rel="noopener noreferrer" aria-label="Open Space Chasing on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/SpaceChasing.webp" alt="Space Chasing" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">07 / CASUAL MOBILE</p><h3>Space Chasing</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Game development for a casual mobile title.</p>
+            <div class="tag-list"><span>Unity</span><span>Gameplay</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=game.spc.space.chasing" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-    <footer class="footer">
-      <p>© 2026 VUONG THANH AN</p>
-      <p>TECHNICAL ARTIST</p>
-    </footer>
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=game.hhh.hexa.hive.rush" target="_blank" rel="noopener noreferrer" aria-label="Open Hexa Hive Rush on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/HexaHiveRush.webp" alt="Hexa Hive Rush" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">08 / PUZZLE MOBILE</p><h3>Hexa Hive Rush</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Game development for a mobile puzzle game.</p>
+            <div class="tag-list"><span>Unity</span><span>Puzzle</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=game.hhh.hexa.hive.rush" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-    <script>
-      /* =========================================================
-     TAB SWITCHING
-  ========================================================= */
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=game.ftd.frosty.drill" target="_blank" rel="noopener noreferrer" aria-label="Open Frosty Drill on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/FrostyDrill.webp" alt="Frosty Drill" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">09 / ARCADE MOBILE</p><h3>Frosty Drill</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Game development for a mobile arcade title.</p>
+            <div class="tag-list"><span>Unity</span><span>Arcade</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=game.ftd.frosty.drill" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-      const navButtons = document.querySelectorAll(".nav-button");
-      const sections = document.querySelectorAll(".tab-section");
 
-      navButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const target = button.dataset.tab;
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=com.djoy.duck.jump" target="_blank" rel="noopener noreferrer" aria-label="Open Duck Jump on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/DuckJump.webp" alt="Duck Jump" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">10 / CASUAL MOBILE</p><h3>Duck Jump</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Casual mobile game development.</p>
+            <div class="tag-list"><span>Unity</span><span>Casual</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=com.djoy.duck.jump" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-          navButtons.forEach((btn) => btn.classList.remove("active"));
-          sections.forEach((section) => section.classList.remove("active"));
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=com.smr.sandwich.maker" target="_blank" rel="noopener noreferrer" aria-label="Open Sandwich Maker on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/SandwichMaker.webp" alt="Sandwich Maker" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">11 / CASUAL MOBILE</p><h3>Sandwich Maker</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Casual cooking game development.</p>
+            <div class="tag-list"><span>Unity</span><span>Casual</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=com.smr.sandwich.maker" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-          button.classList.add("active");
-          document.getElementById(target).classList.add("active");
+        <article class="project-card" data-gallery>
+          <a class="card-media-link" href="https://play.google.com/store/apps/details?id=com.sld.stickman.legend" target="_blank" rel="noopener noreferrer" aria-label="Open Stickman Legend on Google Play">
+            <div class="card-media"><img class="gallery-main" src="artwork/images/StickmanLegend.webp" alt="Stickman Legend" loading="lazy" /><span class="media-open">VIEW GAME ↗</span></div>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><div><p class="project-kicker">12 / ACTION MOBILE</p><h3>Stickman Legend</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p class="project-summary">Action mobile game development.</p>
+            <div class="tag-list"><span>Unity</span><span>Action</span><span>Mobile</span></div>
+            <a class="external-link" href="https://play.google.com/store/apps/details?id=com.sld.stickman.legend" target="_blank" rel="noopener noreferrer">GOOGLE PLAY ↗</a>
+          </div>
+        </article>
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-      });
+      </div>
+    </section>
 
-      /* =========================================================
-         GAME GALLERIES
-      ========================================================= */
+    <section id="highlights" class="section-shell highlights-section">
+      <div class="section-heading"><div><p class="eyebrow">HOW I WORK</p><h2>Technical highlights<span class="heading-period">.</span></h2></div><p class="section-intro">Practical engineering work that supports gameplay quality, iteration speed, and production reliability.</p></div>
+      <div class="highlight-grid">
+        <article class="highlight-item"><span class="highlight-index">01</span><h3>Gameplay & Systems</h3><p>Building gameplay features and reusable systems with a focus on maintainability and clear responsibilities.</p><span class="highlight-tags">C# · OOP · STATE-DRIVEN LOGIC</span></article>
+        <article class="highlight-item"><span class="highlight-index">02</span><h3>Tools & Workflow</h3><p>Creating Unity editor utilities and workflow improvements, including Addressable key generation and inspector helpers.</p><span class="highlight-tags">UNITY EDITOR · ADDRESSABLES</span></article>
+        <article class="highlight-item"><span class="highlight-index">03</span><h3>Performance</h3><p>Profiling and optimizing rendering, environments, asset loading, and runtime performance for mobile targets.</p><span class="highlight-tags">PROFILING · RENDERING · MOBILE</span></article>
+      </div>
+    </section>
 
-      const gameCards = document.querySelectorAll("[data-game]");
+    <section id="about" class="section-shell about-section">
+      <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>From gameplay features<br />to production systems.</h2></div>
+      <div class="about-copy"><p>I’m a Unity game developer working across 2D and 3D projects. I enjoy building gameplay features, solving technical problems, and creating tools that make development workflows more efficient.</p><div class="skill-groups"><div><h3>CORE</h3><p>Unity · C# · OOP · Gameplay Programming</p></div><div><h3>PRODUCTION</h3><p>Addressables · UI Systems · Optimization · Editor Tools</p></div></div></div>
+    </section>
 
-      gameCards.forEach((game) => {
-        const media = game.querySelector(".game-main-image");
-        const mainImage = media.querySelector(".main-image");
-        const mainVideo = media.querySelector(".main-video");
-        const thumbnails = Array.from(game.querySelectorAll(".thumbnail"));
-        const previousButton = game.querySelector(".gallery-prev");
-        const nextButton = game.querySelector(".gallery-next");
-        const thumbnailPrev = game.querySelector(".thumbnail-prev");
-        const thumbnailNext = game.querySelector(".thumbnail-next");
-        const thumbnailStrip = game.querySelector(".game-thumbnails");
-        let currentIndex = 0;
+    <section id="contact" class="section-shell contact-section"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s build something<br /><span>worth playing.</span></h2><div class="contact-links"><a href="mailto:thanhanforjob@gmail.com">EMAIL ↗</a><a href="https://www.linkedin.com/in/an-vuong-a78542160" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://github.com/VuongThanhAn" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://vuongthanhan.github.io/vuong-thanh-an-cv/" target="_blank" rel="noopener noreferrer">RESUME ↗</a></div><p class="contact-note">Replace the email and profile links with your preferred public contact details before publishing.</p></section>
+  </main>
+  <footer class="site-footer"><span>© 2026 VUONG THANH AN</span><span>UNITY GAME DEVELOPER</span><a href="#top">BACK TO TOP ↑</a></footer>
 
-        function showMedia(index) {
-          if (index < 0) index = thumbnails.length - 1;
-          if (index >= thumbnails.length) index = 0;
-          currentIndex = index;
-
-          const thumb = thumbnails[index];
-          const type = thumb.dataset.image;
-
-          thumbnails.forEach((t) => t.classList.remove("active"));
-          thumb.classList.add("active");
-
-          if (type === "video") {
-            const video = thumb.querySelector("video");
-            mainImage.style.display = "none";
-            mainVideo.style.display = "block";
-            mainVideo.src = video.currentSrc || video.src;
-            mainVideo.controls = true;
-            mainVideo.load();
+  <script>
+    // Each project card keeps an independent image/video gallery.
+    document.querySelectorAll('[data-gallery]').forEach((card) => {
+      const frame = card.querySelector('.card-media');
+      const image = card.querySelector('.gallery-main');
+      const buttons = card.querySelectorAll('.mini-thumb');
+      let activeVideo = null;
+      buttons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+          event.preventDefault();
+          const type = button.dataset.type;
+          const src = button.dataset.src;
+          buttons.forEach((item) => item.classList.toggle('is-active', item === button));
+          if (activeVideo) { activeVideo.pause(); activeVideo.remove(); activeVideo = null; }
+          if (type === 'video') {
+            image.hidden = true;
+            const video = document.createElement('video');
+            video.className = 'gallery-main gallery-video';
+            video.src = src;
+            video.controls = true;
+            video.playsInline = true;
+            video.preload = 'metadata';
+            frame.prepend(video);
+            activeVideo = video;
           } else {
-            const image = thumb.querySelector("img");
-            mainVideo.pause();
-            mainVideo.removeAttribute("src");
-            mainVideo.load();
-            mainVideo.style.display = "none";
-            mainImage.style.display = "block";
-            mainImage.src = image.src;
+            image.hidden = false;
+            image.src = src;
           }
-
-          thumb.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "center",
-          });
-        }
-
-        thumbnails.forEach((thumb, index) => {
-          thumb.addEventListener("click", () => showMedia(index));
         });
-
-        previousButton.addEventListener("click", () =>
-          showMedia(currentIndex - 1),
-        );
-        nextButton.addEventListener("click", () => showMedia(currentIndex + 1));
-
-        // Thumbnail arrows select the previous / next thumbnail.
-        // This works even when all thumbnails fit in the row.
-        thumbnailPrev.addEventListener("click", () => {
-          showMedia(currentIndex - 1);
-        });
-
-        thumbnailNext.addEventListener("click", () => {
-          showMedia(currentIndex + 1);
-        });
-
-        showMedia(0);
       });
-    </script>
-  </body>
+    });
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navigation');
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
+</body>
 </html>
